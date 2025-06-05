@@ -31,7 +31,7 @@ export async function main() {
         }
     });
 
-    if (response.status !== "200") {
+    if (response.status !== 200) {
         throw response.body.error;
     }
 

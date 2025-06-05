@@ -112,7 +112,7 @@ export async function main() {
             model: modelName
         }
     });
-    if (response.status !== "200") {
+    if (response.status !== 200) {
         throw response.body.error;
     }
 
@@ -153,7 +153,7 @@ export async function main() {
                         model: modelName
                     }
                 });
-                if (response.status !== "200") {
+                if (response.status !== 200) {
                     throw response.body.error;
                 }
                 console.log(`Model response = ${response.body.choices[0].message.content}`);

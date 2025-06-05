@@ -39,7 +39,7 @@ export async function main() {
 try { 
 
 
-    if (response.status !== "200") {
+    if (response.status !== 200) {
         throw response.body.error;
     }
     console.log(response.body.choices[0].message.content);
